@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Login} />
-        <Route path="/signup" component={Signup} />
+        <Route path="/sign" component={Signup} />
       </Switch>
       <Footer />
     </Router>
