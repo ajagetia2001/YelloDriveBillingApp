@@ -1,17 +1,16 @@
-import firebase from "firebase/app";
-import "firebase/auth";
-import { getDatabase } from "firebase/database"
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDVCXAyy40Iu5vyhedWIsAZQSRsIGm4zyM",
+  authDomain: "auth-dev-yd.firebaseapp.com",
+  databaseURL:
+    "https://auth-dev-yd-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "auth-dev-yd",
+  storageBucket: "auth-dev-yd.appspot.com",
+  messagingSenderId: "593825921656",
+  appId: "1:593825921656:web:2d7d29eaa7e051924c8b8d"
+};
+const app = initializeApp(firebaseConfig);
+// Initialize Realtime Database and get a reference to the service
 export const database = getDatabase(app);
-
-// const app = firebase.initializeApp({
-//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-//   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-//   databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
-//   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-//   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-//   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-//   appId: process.env.REACT_APP_FIREBASE_APP_ID
-// });
-
-// export const auth = app.auth();
-// export default app;
