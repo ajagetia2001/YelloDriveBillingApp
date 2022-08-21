@@ -3,7 +3,9 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Login from "./Components/Login";
 import Signup from "./Components/Signup";
-import BillDetails from "./Components/BillDetail";
+import BillDetails from "./Components/BillDetails";
+import { createInvoice } from "../createInvoice";
+
 
 function App() {
   return (
